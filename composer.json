@@ -33,5 +33,6 @@
     "files": [
       "./src/Helpers/functions.php"
     ]
-  }
+  },
+  "version": "1.0.1"
 }
