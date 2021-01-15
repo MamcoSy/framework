@@ -1,0 +1,45 @@
+{
+  "name": "mamadou-aly-sy/framework",
+  "description": "A simple php framework",
+  "keywords": [
+    "framework",
+    "mamadou",
+    "metro"
+  ],
+  "type": "library",
+  "support": {
+    "issues": "https://github.com/MamcoSy/framework/issues",
+    "source": "https://github.com/MamcoSy/framework",
+    "wiki": "https://github.com/MamcoSy/framework/wiki"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mamadou Aly Sy",
+      "email": "mamco.aly.sy@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.4",
+    "filp/whoops": "^2.9",
+    "jenssegers/blade": "^1.4",
+    "rakit/validation": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "LiteFramework\\": "./src"
+    },
+    "files": [
+      "./src/Helpers/functions.php"
+    ]
+  }
+}
+
+echo "# framework" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/MamcoSy/framework.git
+git push -u origin master
