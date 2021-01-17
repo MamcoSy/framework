@@ -23,6 +23,8 @@ class Validate
 		$validator = new Validator;
 
 		$validation = $validator->make($_POST + $_FILES, $rules);
+		
+		$validation->validate();
 
 		if ($validation->fails()) {
 			$errors = $validation->errors();
