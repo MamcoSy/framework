@@ -21,7 +21,8 @@ class View
 	 */
 	public static function render(string $view, array $data = []): string
 	{
-		// $data = array_merge(Session::flash('errors'), Session::flash('old'));
+		$errors =  Session::flash('errors');
+		$old    =  Session::flash('old');
 
 		return static::bladeRenderer(str_replace(['\\', '/', '.'], DS, $view), $data);
 	}
