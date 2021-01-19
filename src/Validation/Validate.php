@@ -18,12 +18,12 @@ class Validate
 	 * @param array $rules
 	 * @param $json
 	 */
-	public function validate(array $rules, $json = false)
+	public static function validate(array $rules, $json = false)
 	{
 		$validator = new Validator;
 
 		$validation = $validator->make($_POST + $_FILES, $rules);
-		
+
 		$validation->validate();
 
 		if ($validation->fails()) {
