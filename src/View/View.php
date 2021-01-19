@@ -25,7 +25,7 @@ class View
         $data['errors'] = Session::flash('errors');
         $data['old']    = Session::flash('old');
 
-        return static::bladeRenderer(str_replace(['\\', '/', '.'], DS, $view), $data);
+        return static::bladeRenderer(str_replace(['\\', '/', '.'], DIRECTORY_SEPARATOR, $view), $data);
     }
 
     /**
@@ -39,7 +39,7 @@ class View
     {
         ob_start();
         extract($data);
-        FileSystem::requireFile('views' . DS . $view . '.php');
+        FileSystem::requireFile('views' . DIRECTORY_SEPARATOR . $view . '.php');
         $content = ob_get_clean();
         ob_clean();
 
