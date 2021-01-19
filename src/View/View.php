@@ -3,6 +3,7 @@
 namespace LiteFramework\View;
 
 use Jenssegers\Blade\Blade;
+use LiteFramework\Globals\Session;
 use LiteFramework\FileSystem\FileSystem;
 
 class View
