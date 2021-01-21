@@ -182,7 +182,7 @@ class Request
 	 * @param  string       $key
 	 * @return null|mixed
 	 */
-	public static function value(array $global, string $key)
+	public static function value(?array $global, string $key)
 	{
 		$global = isset($global) ? $global : $_REQUEST;
 
