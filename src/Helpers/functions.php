@@ -68,7 +68,7 @@ if (!function_exists('request')) {
 	 */
 	function request(string $key)
 	{
-		return LiteFramework\Http\Request::value($key);
+		return LiteFramework\Http\Request::value(null, $key);
 	}
 }
 
