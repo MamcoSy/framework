@@ -1,1 +1,2 @@
-# framework
+# Metro 
+A simple php framework
