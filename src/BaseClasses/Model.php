@@ -16,9 +16,9 @@ abstract class Model
 	/**
 	 * @param int $id
 	 */
-	public static function find(int $id) :  ? array
+	public static function find(int $id) :  ? object
 	{
-		return Database::table(static::$tableName)->select()->where('id', '=', $id)->get();
+		return Database::table(static::$tableName)->select()->where('id', '=', $id)->first();
 	}
 
 	/**
